@@ -22,18 +22,102 @@
     </nav>
     <!--DATOS PERSONA-->
     <section id="datos">
-      <div class="cont-datos">
-        <div class="dato">
-          <div class="titulo">
-            <h2>Weight</h2>
-            <ion-icon name="body" class="icon"></ion-icon>
+      <form action="https://formspree.io/f/xjvjdbyv" method="POST">
+        <div class="cont-datos">
+          <div class="dato">
+            <label class="titulo" for="weight">
+              <ion-icon name="body" class="icon"></ion-icon>
+              <h2>Weight</h2>
+            </label>
+            <input
+              placeholder="Enter your weight in kg"
+              name="weight"
+              type="number"
+              id="weight"
+              class="input"
+              required
+            />
+          </div>
+          <div class="dato">
+            <label class="titulo" for="height">
+              <ion-icon name="body" class="icon"></ion-icon>
+              <h2>Height</h2>
+            </label>
+            <input
+              placeholder="Enter your height in cm"
+              name="height"
+              type="number"
+              id="height"
+              class="input"
+              required
+            />
+          </div>
+          <div class="dato">
+            <label class="titulo" for="mr">
+              <ion-icon name="body" class="icon"></ion-icon>
+              <h2>MR</h2>
+            </label>
+            <input
+              placeholder="Enter your mr in kcal"
+              name="mr"
+              type="number"
+              id="mr"
+              class="input"
+            />
+          </div>
+          <div class="dato">
+            <label class="titulo" for="age">
+              <ion-icon name="body" class="icon"></ion-icon>
+              <h2>Age</h2>
+            </label>
+            <input
+              placeholder="Enter your age in years"
+              name="age"
+              type="number"
+              id="age"
+              class="input"
+              required
+            />
+          </div>
+          <div class="dato">
+            <label class="titulo" for="sex">
+              <ion-icon name="body" class="icon"></ion-icon>
+              <h2>Sex</h2>
+            </label>
+            <input
+              placeholder="Select your sex"
+              name="sex"
+              type="number"
+              id="sex"
+              class="input"
+              required
+            />
           </div>
         </div>
-      </div>
+        <div class="boton">
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </div>
+      </form>
     </section>
-
     <!--EJERCICIOS-->
     <section id="ejercicios"></section>
+    <div class="cont-ejercicios">
+        <h2>Rutinas</h2>
+        <div>
+            <h3>Brazo & Pecho</h3>
+        </div>
+        <div>
+            <h3>Espalda & abdomen</h3>
+        </div>
+        <div>
+            <h3>Pierna & hombro</h3>
+        </div>
+    </div>
     <!--MACROS-->
     <section id="macros"></section>
     <!--WEBSITE-->
