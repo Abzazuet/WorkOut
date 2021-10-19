@@ -8,5 +8,5 @@ const navLink = document.querySelectorAll(".link");
 navLink.forEach((link) => {
     link.addEventListener("click", ()=> {
         ul.classList.remove("show");
-    })
-})
+    });
+});
