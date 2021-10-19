@@ -10,3 +10,18 @@ navLink.forEach((link) => {
         ul.classList.remove("show");
     });
 });
+//Guardar en un diccionario los valores ingresados
+const calculate = document.querySelector("#submit-btn");
+let valorParametros = [];
+calculate.addEventListener("click", () => {
+    const parametros = document.querySelectorAll(".input");
+    console.log(parametros)
+    parametros.forEach((parametro) => {
+        var parametrox = document.getElementById(parametro.id).value;
+        valorParametros[parametro.id] = parametrox;
+        document.getElementById("proteinas").innerText="Calculo proteinas";
+        document.getElementById("carbos").innerText="Calculo carbos";
+        document.getElementById("grasa").innerText="Calculo grasas";
+    });
+    //Variable valorParametros
+});

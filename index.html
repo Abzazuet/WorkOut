@@ -32,7 +32,7 @@
     </nav>
     <!--DATOS PERSONA-->
     <section id="datos">
-      <form action="https://formspree.io/f/xjvjdbyv" method="POST">
+      <form>
         <div class="cont-datos">
           <div class="dato">
             <label class="titulo" for="weight">
@@ -94,14 +94,11 @@
               <i class="fa fa-venus-mars icon"></i>
               <h2>Sex</h2>
             </label>
-            <input
-              placeholder="Select your sex"
-              name="sex"
-              type="number"
-              id="sex"
-              class="input"
-              required
-            />
+            <select class="input" id="gender">
+              <option value="" disabled selected>Enter your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
           </div>
         </div>
         <div class="boton">
@@ -219,7 +216,32 @@
       </div>
     </section>
     <!--MACROS-->
-    <section id="macros"></section>
+    <section id="macros">
+      <h2>MACROS</h2>
+      <div class="cont-macros">
+        <div class="macro">
+          <i class="fas fa-drumstick-bite icon"></i>
+          <div class="titulo-macro">
+            <h3>Proteinas</h3>
+            <p id="proteinas"></p>
+          </div>
+        </div>
+        <div class="macro">
+          <i class="fas fa-bread-slice icon"></i>
+          <div class="titulo-macro">
+            <h3>Carbohidratos</h3>
+            <p id="carbos"></p>
+          </div>
+        </div>
+        <div class="macro">
+          <i class="fas fa-cheese icon"></i>
+          <div class="titulo-macro">
+            <h3>Grasas</h3>
+            <p id="grasa"></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--WEBSITE-->
     <script src="assets/js/index.js"></script>
   </body>
