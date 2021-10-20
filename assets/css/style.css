@@ -211,7 +211,30 @@ img {
   margin-left: -47px;
 }
 .macro i {
-  margin: 0 0 0 4px;
+  margin: .5rem .5rem .5rem .5rem;
+}
+/* FOOTER*/
+footer{
+  background-color: var(--bg-color-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1rem 0 0 0;
+  padding: 1rem 1rem 0 0;
+}
+footer p{
+  font-weight: var(--bold-font);
+}
+.contact{
+  margin: .5rem 0 .5rem 0; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.built{
+  font-weight: var(--light-font);
 }
 @media (max-width: 480px) {
   nav {
